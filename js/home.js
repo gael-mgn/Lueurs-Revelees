@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
             article_link.href = links[currentImageIndex];
             article_resume.textContent = infos[currentImageIndex];
             article_title.textContent = titles[currentImageIndex];
-        }, 300);
+        },  500); // 500 durée transition changer aussi .article-infos : "transition: left 0.5s;"
 }
 
     // Changez l'image toutes les 3 secondes

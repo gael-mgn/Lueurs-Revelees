@@ -362,7 +362,7 @@ footer {
 
 .article-infos {
     position: absolute;
-    transition: left 0.3s;
+    transition: left 0.5s;
     font-size: 24px;
     height: 100%;
     width: 100%;
