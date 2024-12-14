@@ -29,7 +29,9 @@ blockquote {
   color: #555;
 }
 
-
+h1 {
+    font-weight: normal;
+}
 
 h2, h3 {
     text-decoration: underline;
@@ -178,6 +180,9 @@ main {
 .menu-icon {
     font-size: 24px;
     color: white;
+position: absolute;
+
+    top: 2.2vh;
     display: none; /* Masquer l'icône du menu par défaut sur les écrans larges */
 }
 .menu {

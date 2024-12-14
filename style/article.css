@@ -62,3 +62,44 @@ article h5,
 article h6 {
     font-weight: normal;
 }
+
+
+.poem-text {
+  font-size: 26px;
+  text-align: justify; /* Justifie le texte pour une présentation propre */
+  white-space: pre-line; /* Garde les sauts de ligne du poème */
+}
+
+.poem-author {
+  font-size: 20px;
+  font-style: italic;
+  text-align: right;
+  margin-top: 30px;
+  color: #666;
+}
+
+
+
+
+
+.poem-list {
+  list-style-type: none; /* Supprime les puces */
+  padding: 0;
+}
+
+.poem-list li {
+  margin-bottom: 15px;
+}
+
+.poem-list li a {
+  text-decoration: underline; /* Supprime le soulignement */
+}
+
+.poem-list li a:hover {
+}
+
+/* Séparateurs légers entre les poèmes */
+.poem-list li + li {
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+}
