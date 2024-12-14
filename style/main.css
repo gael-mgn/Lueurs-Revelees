@@ -182,7 +182,7 @@ main {
     color: white;
 position: absolute;
 
-    top: 2.2vh;
+    top: 13px;
     display: none; /* Masquer l'icône du menu par défaut sur les écrans larges */
 }
 .menu {
