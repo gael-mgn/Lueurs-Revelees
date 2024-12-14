@@ -373,9 +373,14 @@ footer {
     color: #ddd;
 }
 .article-infos h2, .article-infos p, .article-infos a {
+    margin-left: 20vw;
+    color: #ddd;
+}
+@media screen and (max-width: 767px) {
+    .article-infos h2, .article-infos p, .article-infos a {
     margin-left: 10vw;
     margin-right: 10vw;
-    color: #ddd;
+}
 }
 .article-infos a {
     position: relative;
@@ -427,12 +432,14 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 10vw;
+    margin: 20vw;
     margin-top: 0px;
     margin-bottom: 30px;
     gap: 20px; /* Espacement entre les éléments de la grille */
 }
-
+.article-grid .contexte {
+    margin-top: 0;
+}
 .article-item {
 
    background-color: white;
