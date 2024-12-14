@@ -40,7 +40,15 @@ article img {
     width: 100%;
      margin-top: 20px;
      margin-bottom: 20px;
+
 }
+.article-item img {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+
 article h1 {
     margin-bottom: 0;
 }

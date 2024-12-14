@@ -7,9 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const duration = 7500;
 
    	const links = Array.from(document.querySelectorAll('.article-grid a')).map(a => a.getAttribute('href'));
-    const titles = Array.from(document.querySelectorAll('.article-info .article-title')).map(h3 => h3.textContent);
+    const alts = Array.from(document.querySelectorAll('.article-grid img')).map(img => img.alt);
+    const titles = Array.from(document.querySelectorAll('.article-grid .article-info .article-title')).map(h3 => h3.textContent);
     const images = Array.from(document.querySelectorAll('.article-grid img')).map(img => img.src);
-    const infos = Array.from(document.querySelectorAll('.article-info .article-description')).map(p => p.textContent);
+    const infos = Array.from(document.querySelectorAll('.article-grid .article-info .article-description')).map(p => p.textContent);
 
     const article_link = document.getElementById("article_link");
     const article_title = document.getElementById("article_title");
@@ -22,13 +23,15 @@ document.addEventListener("DOMContentLoaded", function () {
     article_resume.textContent = infos[0];
     
     carouselImage.src = images[0];
+    carouselImage.alt = alts[0];
     carouselImage2.src = images[0];
+    carouselImage2.alt = alts[0];
 
     function changeImage() {
         currentImageIndex = (currentImageIndex + 1) % images.length;
         const newImage = images[currentImageIndex];
         carouselImage.src = newImage;
-
+        carouselImage.alt = alts[currentImageIndex];
         // Appliquez le fondu en changeant l'opacité
         carouselImage2.style.opacity = 0;
         article_infos.style.left = `${-article_infos.offsetWidth}px`;
@@ -38,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
         setTimeout(function () {
             article_infos.style.left = '0px';
             carouselImage2.src = newImage;
+            carouselImage2.alt = alts[currentImageIndex];
             carouselImage2.style.opacity = 1;
         }, 1000); // Ajustez la durée du fondu ici (en millisecondes)
 

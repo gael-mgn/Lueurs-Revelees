@@ -1,8 +1,3 @@
-function replaceAll(originalString, search, replacement) {
-    return originalString.split(search).join(replacement);
-}
-
-const email = "gael.maignan.pro[at]gmail.com"
 
 const root = 'https://sciensationnel.github.io/Sciensationnel/'
 
