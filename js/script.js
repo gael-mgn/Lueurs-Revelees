@@ -1,10 +1,3 @@
-
-const root = 'https://sciensationnel.github.io/Sciensationnel/'
-
-
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
 
 
